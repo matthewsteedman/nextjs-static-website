@@ -1,0 +1,21 @@
+@function vw($screenWidth, $pixelValue) {
+  $result: ($pixelValue/$screenWidth) * 100vw;
+  @return $result;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  height: vw(320, 80);
+  padding: vw(320, 16) vw(320, 23) vw(320, 16) vw(320, 23);
+}
+.LogoContainer {
+  width: vw(320, 152);
+  height: vw(320, 48);
+}
+.menuButton {
+  width: vw(320, 48);
+  height: vw(320, 48);
+}
